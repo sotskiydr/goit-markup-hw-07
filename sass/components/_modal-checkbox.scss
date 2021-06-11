@@ -1,15 +1,15 @@
-.checkbox-container {
+.backdrop__checkbox {
     position: relative;
     margin-bottom: 30px;
     align-self: center;
-    .modal-form-checkbox {
+    .backdrop__checkbox-input {
         position: absolute;
         top: 20px;
         left: 10px;
-        &:focus+.label-user-checkbox::before {
+        &:focus+.backdrop__checkbox-label::before {
             border-color: $hoverColor;
         }
-        &:checked+.label-user-checkbox::before {
+        &:checked+.backdrop__checkbox-label::before {
             background-color: $hoverColor;
             background-image: url(../images/checkbox-svg/icon-checkbox-checked.svg);
             background-position: center;
@@ -17,7 +17,7 @@
             border-color: $hoverColor;
         }
     }
-    .label-user-checkbox {
+    .backdrop__checkbox-label {
         font-weight: normal;
         font-size: 14px;
         line-height: 1.71;
@@ -35,7 +35,7 @@
             vertical-align: middle;
             transition: border-color 250ms $transitionTimingFunc, background-color 250ms $transitionTimingFunc;
         }
-        .policy-link {
+        .backdrop__policy-link {
             text-decoration: underline;
             color: $hoverColor;
         }

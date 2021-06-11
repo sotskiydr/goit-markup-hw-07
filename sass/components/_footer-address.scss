@@ -1,17 +1,17 @@
-.address {
+.footer__address {
     margin-top: 20px;
     font-style: normal;
-    .address-items .item:not(:last-child) {
+    .address__item:not(:last-child) {
         margin-bottom: 9px;
     }
-    .map-link {
+    .address__map_link {
         color: $additionalColor;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     }
-    .contacts {
+    .address__link {
         color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
         font-size: 14px;

@@ -422,33 +422,29 @@ img {
 }
 
 .footer {
-  padding: 60px 0px;
   background-color: #2F303A;
 }
 
-.footer .footer-container {
+.footer .footer__container {
   padding: 0 0;
 }
 
-.footer .footer-sections {
+.footer .footer__sections {
   display: flex;
   align-items: baseline;
+  padding: 60px 15px;
 }
 
-.footer .footer-form {
-  display: flex;
-}
-
-.address {
+.footer__address {
   margin-top: 20px;
   font-style: normal;
 }
 
-.address .address-items .item:not(:last-child) {
+.footer__address .address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address .map-link {
+.footer__address .address__map_link {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
@@ -456,7 +452,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.address .contacts {
+.footer__address .address__link {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
@@ -465,15 +461,15 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address .contacts:hover, .address .contacts:focus {
+.footer__address .address__link:hover, .footer__address .address__link:focus {
   color: #2196F3;
 }
 
-.footer-join {
-  margin-left: 70px;
+.footer__join {
+  margin-left: 83px;
 }
 
-.footer-join .join-content {
+.footer__join .footer__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -482,12 +478,12 @@ img {
   color: #FFFFFF;
 }
 
-.footer-social-links {
+.footer__list {
   display: flex;
   margin-top: 20px;
 }
 
-.footer-social-links .footer-join-link {
+.footer__list .footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -498,26 +494,26 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-links .footer-join-link:hover, .footer-social-links .footer-join-link:focus {
+.footer__list .footer__link:hover, .footer__list .footer__link:focus {
   background-color: #2196F3;
 }
 
-.footer-social-links .footer-join-link .link-join-logo {
+.footer__list .footer__link .footer__link_logo {
   display: block;
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
 
-.footer-social-links .footer-icons-logo:not(:last-child) {
+.footer__list .footer__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.subscribe {
+.footer__subscribe {
   margin-left: 93px;
 }
 
-.subscribe .subscribe-title {
+.footer__subscribe .subscribe__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -527,7 +523,11 @@ img {
   margin-bottom: 20px;
 }
 
-.subscribe .subscribe-email {
+.footer__subscribe .footer__form {
+  display: flex;
+}
+
+.footer__subscribe .subscribe__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -541,7 +541,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe .subscribe-email::placeholder {
+.footer__subscribe .subscribe__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -550,11 +550,11 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe .subscribe-email:focus {
+.footer__subscribe .subscribe__input:focus {
   border-color: #2196F3;
 }
 
-.subscribe .subscribe-btn {
+.footer__subscribe .subscribe__button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -574,19 +574,19 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe .subscribe-btn:hover, .subscribe .subscribe-btn:focus {
+.footer__subscribe .subscribe__button:hover, .footer__subscribe .subscribe__button:focus {
   background-color: #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.subscribe .subscribe-btn .icon-send {
+.footer__subscribe .subscribe__button .footer__form_icon {
   fill: #ffffff;
   width: 24px;
   height: 24px;
   margin-left: 10px;
 }
 
-.modal {
+.backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -600,7 +600,7 @@ img {
   padding: 40px;
 }
 
-.modal .btn-modal-close {
+.backdrop__modal .backdrop__modal-button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -612,24 +612,24 @@ img {
   cursor: pointer;
 }
 
-.modal .btn-modal-close .modal-btn {
+.backdrop__modal .backdrop__modal-button .backdrop__modal-button_icon {
   fill: #000000;
   width: 11px;
   height: 11px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .btn-modal-close:hover .modal-btn,
-.modal .btn-modal-close:focus .modal-btn {
+.backdrop__modal .backdrop__modal-button:hover .backdrop__modal-button_icon,
+.backdrop__modal .backdrop__modal-button:focus .backdrop__modal-button_icon {
   fill: #2196F3;
 }
 
-.modal-form {
+.backdrop__modal-form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-form .modal-title {
+.backdrop__modal-form .backdrop__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -639,7 +639,7 @@ img {
   margin-bottom: 12px;
 }
 
-.modal-form .modal-submit-btn {
+.backdrop__modal-form .backdrop__submit-btn {
   display: block;
   align-self: center;
   font-weight: 700;
@@ -657,15 +657,15 @@ img {
   cursor: pointer;
 }
 
-.modal-form .modal-submit-btn:hover, .modal-form .modal-submit-btn:focus {
+.backdrop__modal-form .backdrop__submit-btn:hover, .backdrop__modal-form .backdrop__submit-btn:focus {
   background-color: #188CE8;
 }
 
-.modal-form .label-user-message {
+.backdrop__modal-form .backdrop__user-message {
   margin-bottom: 4px;
 }
 
-.modal-form .modal-form-message {
+.backdrop__modal-form .backdrop__message {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -677,7 +677,7 @@ img {
   resize: none;
 }
 
-.modal-form .modal-form-message::placeholder {
+.backdrop__modal-form .backdrop__message::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
@@ -685,18 +685,26 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form .modal-form-message:focus {
+.backdrop__modal-form .backdrop__message:focus {
   border-color: #2196F3;
   outline: none;
 }
 
-.input-container {
+.backdrop__modal-form .backdrop__label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.backdrop__input-container {
   position: relative;
   margin-top: 4px;
   margin-bottom: 10px;
 }
 
-.input-container .modal-form-input {
+.backdrop__input-container .backdrop__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -705,12 +713,12 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-container .modal-form-input:focus {
+.backdrop__input-container .backdrop__input:focus {
   border-color: #2196F3;
   outline: none;
 }
 
-.input-icons {
+.backdrop__input_icons {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -721,16 +729,8 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus + .input-icons {
+.backdrop__input:focus + .backdrop__input_icons {
   fill: #2196F3;
-}
-
-.label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #757575;
 }
 
 .backdrop {
@@ -751,23 +751,23 @@ img {
   pointer-events: none;
 }
 
-.checkbox-container {
+.backdrop__checkbox {
   position: relative;
   margin-bottom: 30px;
   align-self: center;
 }
 
-.checkbox-container .modal-form-checkbox {
+.backdrop__checkbox .backdrop__checkbox-input {
   position: absolute;
   top: 20px;
   left: 10px;
 }
 
-.checkbox-container .modal-form-checkbox:focus + .label-user-checkbox::before {
+.backdrop__checkbox .backdrop__checkbox-input:focus + .backdrop__checkbox-label::before {
   border-color: #2196F3;
 }
 
-.checkbox-container .modal-form-checkbox:checked + .label-user-checkbox::before {
+.backdrop__checkbox .backdrop__checkbox-input:checked + .backdrop__checkbox-label::before {
   background-color: #2196F3;
   background-image: url(../images/checkbox-svg/icon-checkbox-checked.svg);
   background-position: center;
@@ -775,7 +775,7 @@ img {
   border-color: #2196F3;
 }
 
-.checkbox-container .label-user-checkbox {
+.backdrop__checkbox .backdrop__checkbox-label {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -783,7 +783,7 @@ img {
   color: #757575;
 }
 
-.checkbox-container .label-user-checkbox::before {
+.backdrop__checkbox .backdrop__checkbox-label::before {
   content: "";
   border: 2px solid #212121;
   border-radius: 3px;
@@ -796,7 +796,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-container .label-user-checkbox .policy-link {
+.backdrop__checkbox .backdrop__checkbox-label .backdrop__policy-link {
   text-decoration: underline;
   color: #2196F3;
 }
