@@ -1,0 +1,69 @@
+.navigation {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+    .item__link,
+    .contacts-item__link {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        padding: 32px 0px 32px 0px;
+        letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: $hoverColor;
+        }
+        .contacts-item__link_logo {
+            fill: currentColor;
+            display: block;
+            margin-right: 10px;
+        }
+    }
+    .navigation__site-nav {
+        margin-left: 93px;
+        .navigation__nav-items {
+            display: flex;
+            padding: 0;
+        }
+        .navigation__item:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    .navigation__contacts {
+        display: flex;
+        margin-left: auto;
+        color: $secondColor;
+        .navigation__contacts-item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.phone-icon {
+    width: 10px;
+    height: 16px;
+}
+
+.mail-icon {
+    width: 16px;
+    height: 12px;
+}
+
+.item__link_current {
+    color: $hoverColor;
+    position: relative;
+    &::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $hoverColor;
+    }
+}

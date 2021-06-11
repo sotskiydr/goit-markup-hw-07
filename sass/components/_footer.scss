@@ -1,0 +1,14 @@
+.footer {
+    padding: 60px 0px;
+    background-color: #2F303A;
+    .footer-container {
+        padding: 0 0;
+    }
+    .footer-sections {
+        display: flex;
+        align-items: baseline;
+    }
+    .footer-form {
+        display: flex;
+    }
+}

@@ -1,0 +1,39 @@
+.footer-join {
+    margin-left: 70px;
+    .join-content {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.footer-social-links {
+    display: flex;
+    margin-top: 20px;
+    .footer-join-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        transition: background-color 250ms $transitionTimingFunc;
+        &:hover,
+        &:focus {
+            background-color: $hoverColor;
+        }
+        .link-join-logo {
+            display: block;
+            width: 20px;
+            height: 20px;
+            fill: $additionalColor;
+        }
+    }
+    .footer-icons-logo:not(:last-child) {
+        margin-right: 10px;
+    }
+}

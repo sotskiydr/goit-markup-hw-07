@@ -8,40 +8,42 @@
     <title>Портфолио</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!--Навигация-->
     <header>
-        <div class="container nav-container">
-            <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
-            <nav class="site-nav">
-                <ul class="site-nav-items">
-                    <li class="item"><a class="nav-link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="nav-link current" href="">Портфолио</a></li>
-                    <li class="item"><a class="nav-link" href="">Контакты</a></li>
+        <div class="navigation container ">
+            <a href="" lang="en" class="logo">Web<span class="header-logo">Studio</span></a>
+            <nav class="navigation__site-nav">
+                <ul class="navigation__nav-items">
+                    <li class="navigation__item"><a class="item__link" href="index.html">Студия</a></li>
+                    <li class="navigation__item"><a class="item__link item__link_current" href="">Портфолио</a></li>
+                    <li class="navigation__item"><a class="item__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts">
-                <li class="item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">
-                        <svg class="social-links-icon mail-icon">
+            <ul class="navigation__contacts">
+                <li class="navigation__contacts-item">
+                    <a class="contacts-item__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-item__link_logo mail-icon">
                             <use href="./images/icons.svg#mail"></use>
-                        </svg>info@devstudio.com</a>
+                        </svg>info@devstudio.com
+                    </a>
                 </li>
                 <li class="item">
-                    <a class="contacts-link" href="tel:+380961111111">
-                        <svg class="social-links-icon phone-icon">
+                    <a class="contacts-item__link" href="tel:+380961111111">
+                        <svg class="contacts-item__link_logo phone-icon">
                             <use href="./images/icons.svg#smartphone"></use>
-                        </svg> +38 096 111 11 11</a>
+                        </svg> +38 096 111 11 11
+                    </a>
                 </li>
             </ul>
         </div>
     </header>
     <main>
         <!-- Портфолио -->
-        <div class="container container-portfolio">
+        <div class="container">
             <section class="portfolio section">
                 <ul class="filter">
                     <li class="item"><button class="btn-filter" type="button">Все</button></li>
@@ -177,7 +179,7 @@
     <footer class="footer">
         <div class="container footer-sections">
             <div class=" footer-container">
-                <a href="" lang="en" class="logo footer-logo"><span>Web</span>Studio</a>
+                <a href="" lang="en" class="logo">Web<span class="footer-logo">Studio</span></a>
                 <address class="address">
                     <ul class="address-items">
                         <li class="item"><a class="map-link" href="https://goo.gl/maps/Ut2xwaLdVSmV2iXo9" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
@@ -188,7 +190,7 @@
             </div>
             <div class="footer-join">
                 <p class="join-content">присоединяйтесь</p>
-                <ul class="footer-links">
+                <ul class="footer-social-links">
                     <li class="footer-icons-logo">
                         <a class="footer-join-link" href="">
                             <svg class="link-join-logo">
@@ -222,7 +224,7 @@
             <div class="subscribe">
                 <p class="subscribe-title">Подпишитесь на рассылку</p>
                 <form action="#" class="footer-form">
-                    <input type="email" class="subscribe-email" placeholder="E-mail" required>
+                    <input type="email" name="user-email" class="subscribe-email" placeholder="E-mail" required>
                     <button type="submit" class="subscribe-btn">Подписаться
                         <svg class="icon-send">
                             <use href="./images/icons.svg#icon-send"></use>
