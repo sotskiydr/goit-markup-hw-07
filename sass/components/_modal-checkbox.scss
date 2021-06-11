@@ -11,7 +11,7 @@
         }
         &:checked+.label-user-checkbox::before {
             background-color: $hoverColor;
-            background-image: url(../images/checkbox-svg/icon-checkbox-checked.svg);
+            background-image: url(../../images/checkbox-svg/icon-checkbox-checked.svg);
             background-position: center;
             background-size: 110%;
             border-color: $hoverColor;
