@@ -769,7 +769,7 @@ img {
 
 .checkbox-container .modal-form-checkbox:checked + .label-user-checkbox::before {
   background-color: #2196F3;
-  background-image: url(../../images/checkbox-svg/icon-checkbox-checked.svg);
+  background-image: url(../images/checkbox-svg/icon-checkbox-checked.svg);
   background-position: center;
   background-size: 110%;
   border-color: #2196F3;
