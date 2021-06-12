@@ -1,11 +1,11 @@
-.filter {
+.portfolio__filter-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    .item:not(:last-child) {
+    .portfolio__filter-item:not(:last-child) {
         margin-right: 8px;
     }
-    .btn-filter {
+    .portfolio__filter-button {
         background-color: #F5F4FA;
         font-weight: 500;
         font-size: 16px;

@@ -1,21 +1,21 @@
-.portfolio-items {
+.portfolio__cards {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: -30px 0px 0px -30px;
-    .item-content {
+    .portfolio__item-description {
         padding: 20px 24px;
         border-left: 1px solid #EEEEEE;
         border-bottom: 1px solid #EEEEEE;
         border-right: 1px solid #EEEEEE;
-        .portfolio-title {
+        .portfolio__item-title {
             font-style: normal;
             font-weight: 700;
             font-size: 18px;
             line-height: 2;
             letter-spacing: 0.06em;
         }
-        .portfolio-content {
+        .portfolio__item-content {
             color: $secondColor;
             font-weight: 400;
             font-size: 16px;
@@ -25,7 +25,7 @@
     }
 }
 
-.portfolio-items .item {
+.portfolio__card-item {
     flex-basis: calc((100% - 90px)/3);
     margin-top: 30px;
     margin-left: 30px;
@@ -34,10 +34,10 @@
     &:focus {
         box-shadow: $portfolioItemShadow;
     }
-    .portfolio-item-link {
+    .portfolio__card-link {
         display: block;
         transition: box-shadow 250ms $transitionTimingFunc;
-        .portfolio-thumb {
+        .portfolio__card-thumb {
             position: relative;
             overflow: hidden;
         }
@@ -47,7 +47,7 @@
     }
 }
 
-.portfolio-overlay {
+.portfolio__card-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -63,8 +63,8 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms $transitionTimingFunc;
-    .portfolio-item-link:hover &,
-    .portfolio-item-link:focus & {
+    .portfolio__card-link:hover &,
+    .portfolio__card-link:focus & {
         transform: translateY(0%);
     }
 }
