@@ -10,7 +10,7 @@
     }
 }
 
-.what-doing__items {
+.what-doing__list {
     display: flex;
     padding: 0;
     .what-doing__item {
@@ -18,7 +18,7 @@
         &:not(:last-child) {
             margin-right: 30px;
         }
-        .what-doing-items__description {
+        .what-doing__description {
             position: absolute;
             width: 100%;
             text-align: center;

@@ -1,10 +1,10 @@
-.footer__address {
+.address__box {
     margin-top: 20px;
     font-style: normal;
     .address__item:not(:last-child) {
         margin-bottom: 9px;
     }
-    .address__map_link {
+    .address__link--map {
         color: $additionalColor;
         font-weight: 400;
         font-size: 14px;

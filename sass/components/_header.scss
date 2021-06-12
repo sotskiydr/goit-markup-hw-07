@@ -1,9 +1,12 @@
-.navigation {
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-    .item__link,
-    .contacts-item__link {
+    .nav__link,
+    .contacts__link {
         display: inline-flex;
         align-items: center;
         font-weight: 500;
@@ -16,27 +19,27 @@
         &:focus {
             color: $hoverColor;
         }
-        .contacts-item__link_logo {
+        .contacts__icon {
             fill: currentColor;
             display: block;
             margin-right: 10px;
         }
     }
-    .navigation__site-nav {
+    .nav {
         margin-left: 93px;
-        .navigation__nav-items {
+        .nav__list {
             display: flex;
             padding: 0;
         }
-        .navigation__item:not(:last-child) {
+        .nav__item:not(:last-child) {
             margin-right: 50px;
         }
     }
-    .navigation__contacts {
+    .contacts__list {
         display: flex;
         margin-left: auto;
         color: $secondColor;
-        .navigation__contacts-item:not(:last-child) {
+        .contacts__item:not(:last-child) {
             margin-right: 30px;
         }
     }
@@ -52,7 +55,7 @@
     height: 12px;
 }
 
-.item__link_current {
+.nav__link--current {
     color: $hoverColor;
     position: relative;
     &::after {

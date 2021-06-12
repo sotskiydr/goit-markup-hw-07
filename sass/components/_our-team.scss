@@ -10,7 +10,7 @@
     }
 }
 
-.our-team__items {
+.our-team__list {
     display: flex;
     padding-left: 0px;
     margin: 0;
@@ -43,7 +43,7 @@
     }
 }
 
-.our-team-card__items {
+.our-team-card__list {
     display: flex;
     justify-content: center;
     .our-team-card__item {
@@ -67,7 +67,7 @@
             background-color: $hoverColor;
             color: $additionalColor;
         }
-        .our-team-card__logo {
+        .our-team-card__icon {
             display: block;
             width: 20px;
             height: 20px;

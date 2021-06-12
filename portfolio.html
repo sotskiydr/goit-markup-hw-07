@@ -13,27 +13,27 @@
 
 <body>
     <!--Навигация-->
-    <header>
-        <div class="navigation container ">
-            <a href="" lang="en" class="logo">Web<span class="header-logo">Studio</span></a>
-            <nav class="navigation__site-nav">
-                <ul class="navigation__nav-items">
-                    <li class="navigation__item"><a class="item__link" href="index.html">Студия</a></li>
-                    <li class="navigation__item"><a class="item__link item__link_current" href="">Портфолио</a></li>
-                    <li class="navigation__item"><a class="item__link" href="">Контакты</a></li>
+    <header class="page-header">
+        <div class="header__container container ">
+            <a href="" lang="en" class="logo">Web<span class="header__logo">Studio</span></a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="index.html">Студия</a></li>
+                    <li class="nav__item"><a class="nav__link nav__link--current" href="">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="navigation__contacts">
-                <li class="navigation__contacts-item">
-                    <a class="contacts-item__link" href="mailto:info@devstudio.com">
-                        <svg class="contacts-item__link_logo mail-icon">
+            <ul class="contacts__list">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg class="contacts__icon mail-icon">
                             <use href="./images/icons.svg#mail"></use>
                         </svg>info@devstudio.com
                     </a>
                 </li>
-                <li class="item">
-                    <a class="contacts-item__link" href="tel:+380961111111">
-                        <svg class="contacts-item__link_logo phone-icon">
+                <li class="contacts__item">
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg class="contacts__icon phone-icon">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg> +38 096 111 11 11
                     </a>
@@ -53,7 +53,7 @@
                     <li class="portfolio__filter-item"><button class="portfolio__filter-button" type="button">Маркетинг</button></li>
                 </ul>
                 <h1 class="hidden">Портфолио</h1>
-                <ul class="portfolio__cards">
+                <ul class="portfolio__cards-list">
                     <li class="portfolio__card-item">
                         <a class="portfolio__card-link" href="">
                             <div class="portfolio__card-thumb">
@@ -177,56 +177,56 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container footer__sections">
-            <div class="footer__container">
-                <a href="" lang="en" class="logo">Web<span class="footer-logo">Studio</span></a>
-                <address class="footer__address">
+        <div class="footer__sections container">
+            <div class="address__container">
+                <a href="" lang="en" class="logo">Web<span class="footer__logo">Studio</span></a>
+                <address class="address__box">
                     <ul class="address__list">
-                        <li class="address__item"><a class="address__map_link" href="https://goo.gl/maps/Ut2xwaLdVSmV2iXo9 " target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address__item"><a class="address__link--map" href="https://goo.gl/maps/Ut2xwaLdVSmV2iXo9 " target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
                         <li class="address__item"><a class="address__link" href="mailto:info@example.com ">info@example.com</a></li>
                         <li class="address__item"><a class="address__link" href="tel:+380991111111 ">+38 099 111 11 11</a></li>
                     </ul>
                  </address>
             </div>
-            <div class="footer__join">
-                <p class="footer__description">присоединяйтесь</p>
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a class="footer__link" href="">
-                            <svg class="footer__link_logo">
+            <div class="join__container">
+                <p class="join__description">присоединяйтесь</p>
+                <ul class="join__list">
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon">
                             <use href="./images/icons.svg#instagram"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">
-                            <svg class="footer__link_logo">
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon">
                             <use href="./images/icons.svg#twitter "></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">
-                            <svg class="footer__link_logo">
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon">
                             <use href="./images/icons.svg#facebook "></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="footer__item">
-                        <a class="footer__link" href="">
-                            <svg class="footer__link_logo">
+                    <li class="join__item">
+                        <a class="join__link" href="">
+                            <svg class="join__icon">
                             <use href="./images/icons.svg#linkedin "></use>
                         </svg>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__subscribe">
+            <div class="subscribe__container">
                 <p class="subscribe__title">Подпишитесь на рассылку</p>
-                <form action="#" class="footer__form">
+                <form action="#" class="subscribe__form">
                     <input type="email" name="user-email" class="subscribe__input" placeholder="E-mail" required>
                     <button type="submit" class="subscribe__button">Подписаться
-                        <svg class="footer__form_icon">
+                        <svg class="subscribe__icon">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>

@@ -1,4 +1,4 @@
-.footer__subscribe {
+.subscribe__container {
     margin-left: 93px;
     .subscribe__title {
         font-weight: 700;
@@ -9,7 +9,7 @@
         color: $additionalColor;
         margin-bottom: 20px;
     }
-    .footer__form {
+    .subscribe__form {
         display: flex;
     }
     .subscribe__input {
@@ -59,7 +59,7 @@
             background-color: #188CE8;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
-        .footer__form_icon {
+        .subscribe__icon {
             fill: $additionalColor;
             width: 24px;
             height: 24px;

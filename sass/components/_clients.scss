@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -8,12 +8,15 @@
     margin-bottom: 50px;
 }
 
-.clients__items {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.clients__box {
+.clients__item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
     .clients__link {
         display: flex;
         justify-content: center;
@@ -27,16 +30,13 @@
         &:focus {
             border-color: $hoverColor;
         }
-        .sprite {
+        .clients__icon {
             fill: #afb1b8;
             transition: fill 250ms $transitionTimingFunc;
         }
-        &:hover .sprite,
-        &:focus .sprite {
+        &:hover .clients__icon,
+        &:focus .clients__icon {
             fill: $hoverColor;
         }
-    }
-    &:not(:last-child) {
-        margin-right: 30px;
     }
 }

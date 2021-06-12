@@ -1,4 +1,4 @@
-.backdrop__modal {
+.backdrop__container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,7 +20,7 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: $additionalColor;
         cursor: pointer;
-        .backdrop__modal-button_icon {
+        .backdrop__modal-button--icon {
             fill: #000000;
             width: 11px;
             height: 11px;
@@ -118,7 +118,7 @@
     }
 }
 
-.backdrop__input_icons {
+.backdrop__input--icon {
     position: absolute;
     top: 50%;
     left: 12px;

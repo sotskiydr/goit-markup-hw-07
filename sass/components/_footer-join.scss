@@ -1,6 +1,6 @@
-.footer__join {
+.join__container {
     margin-left: 83px;
-    .footer__description {
+    .join__description {
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -10,10 +10,13 @@
     }
 }
 
-.footer__list {
+.join__list {
     display: flex;
     margin-top: 20px;
-    .footer__link {
+    .join__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .join__link {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -26,14 +29,11 @@
         &:focus {
             background-color: $hoverColor;
         }
-        .footer__link_logo {
+        .join__icon {
             display: block;
             width: 20px;
             height: 20px;
             fill: $additionalColor;
         }
-    }
-    .footer__item:not(:last-child) {
-        margin-right: 10px;
     }
 }
